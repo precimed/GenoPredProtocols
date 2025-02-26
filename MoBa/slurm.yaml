@@ -1,0 +1,5 @@
+executor: slurm
+jobs: 100 # This is the number of jobs that will be used concurrently
+cluster: "sbatch -p p697,shared -t {resources.time_min} --mem={resources.mem_mb} -c {threads} --output=logs/%x_%j.out --error=logs/%x_%j.err"
+default-resources: [mem_mb=8000, time_min=480]
+use-conda: true

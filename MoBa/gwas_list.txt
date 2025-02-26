@@ -1,0 +1,2 @@
+name path population n sampling prevalence mean sd label
+HEIGHT22 /ess/p697/cluster/projects/SUMSTATv3/v3.1/STD_GRCh37/GIANT_HEIGHT_2022.sumstats.gz EUR NA NA NA 0 1 "Height"

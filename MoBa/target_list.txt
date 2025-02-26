@@ -1,0 +1,2 @@
+name path type indiv_report
+MoBa_1000inds_all_variants /ess/p697/data/durable/users/espehage/GenoPredTest/MoBa/input/MoBaPsychGen_v1-ec-eur-batch-basic-qc-1000inds-all-variants plink1 T

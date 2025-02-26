@@ -1,0 +1,2 @@
+name path label
+HEIGHT22 /ess/p697/cluster/projects/SUMSTATv3/v3.1/STD_GRCh37/GIANT_HEIGHT_2022.sumstats.gz "Height GIANT EUR"

@@ -1,0 +1,61 @@
+# Specify output directory
+outdir: /ess/p697/data/durable/users/espehage/GenoPredProtocols/MoBa/output
+
+# Location of this config file
+config_file: /ess/p697/data/durable/users/espehage/GenoPredProtocols/MoBa/config.yaml
+
+# Specify location of gwas_list file
+gwas_list: /ess/p697/data/durable/users/espehage/GenoPredProtocols/MoBa/gwas_list.txt
+
+# Specify location of target_list file
+target_list: /ess/p697/data/durable/users/espehage/GenoPredProtocols/MoBa/target_list.txt
+
+# Specify location of score_list file
+score_list: NA 
+# not using external score list files
+# https://opain.github.io/GenoPred/pipeline_readme.html#score_list 
+# score_list: /ess/p697/data/durable/users/espehage/GenoPredProtocols/MoBa/score_list.txt
+
+# Specify pgs_methods ('ptclump','dbslmm','prscs','sbayesr','lassosum','ldpred2','megaprs')
+pgs_methods: ['ptclump','dbslmm','prscs','sbayesr','lassosum','ldpred2','megaprs']
+
+# Specify p-value thresholds for ptclump
+ptclump_pts: ['5e-8', '1e-6', '1e-4', '1e-2', '0.1', '0.2', '0.3', '0.4', '0.5', '1']
+
+# Specify SNP-h2 folds in DBSLMM (1 = corresponds to default model)
+dbslmm_h2f: ['0.8', '1', '1.2']
+
+# Specify phi parameters for PRS-CS
+prscs_phi: ['1e-6', '1e-4', '1e-2', '1', 'auto']
+
+# Specify 1kg or ukb ld reference for PRS-CS
+prscs_ldref: '1kg'
+
+# Specify models for LDpred2
+# ldpred2_model: ['grid', 'auto', 'inf']
+# disable grid model for LDpred2 (many output columns)
+ldpred2_model: ['auto', 'inf']
+
+# Specify models for LDpred2-auto should be used for inference of h2, p, and alpha
+ldpred2_inference: T
+
+# Specify ancestry classification probability threshold
+# ancestry_prob_thresh: 0.95
+# Override ancestry inference: https://github.com/opain/GenoPred/issues/129
+# https://opain.github.io/GenoPred/pipeline_readme.html#Altering_ancestry_threshold
+ancestry_prob_thresh: 0
+
+# Specify if you want test mode. Set to NA if you don't want test mode
+testing: NA
+
+# Specify number of cores for polygenic scoring methods (ptclump always uses 1)
+cores_prep_pgs: 8
+
+# Specify number of cores for target scoring
+cores_target_pgs: 8
+
+# Specify memory in megabytes for target scoring
+mem_target_pgs: 28000
+
+# Resource directory
+resdir: /ess/p697/data/durable/users/espehage/GenoPred/pipeline/resources
