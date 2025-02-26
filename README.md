@@ -5,7 +5,8 @@ Inhouse protocols and scripts for running GenoPred on TSD projects or other offl
 
 GenoPred is a research programme based at King’s College London that focuses on key issues relating to the clinical utility of polygenic scores, investigating polygenic scoring research questions, and developing tools that implement current best practises.
 
-For details on GenoPred, see its excellent [documantation](https://opain.github.io/GenoPred/index.html)
+For details on GenoPred, see its excellent [documentation](https://opain.github.io/GenoPred/index.html). 
+Sources: [github.com/opain/GenoPred/](https://github.com/opain/GenoPred/) 
 
 ## Dependencies
 
