@@ -12,8 +12,8 @@ For details on GenoPred, see its excellent [documantation](https://opain.github.
 In offline environments, the entirety of GenoPred, its reference data required by its Snakemake based workflows, and container (.sif) file must be downloaded and installed locally.
 As of now copies exist in the following TSD project directories:
 
-- `/ess/p697/data/durable/users/espehage/GenoPred
-- `/ess/p33/data/durable/users/espehage/GenoPred
+- `/ess/p697/data/durable/users/espehage/GenoPred`
+- `/ess/p33/data/durable/users/espehage/GenoPred`
 
 ## MoBa
 
